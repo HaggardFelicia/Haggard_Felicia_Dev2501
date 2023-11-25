@@ -1,11 +1,14 @@
-1. -[] Button Component for your application.
+
+# Todo
+
+1. -[x] Button Component for your application.
 2. -[] Form component for adding a post. Which includes the following:
     1. -[] input for the post title.
     2. -[] input for the post description.
-3. -[] Header component. Which includes the following:
-    1. -[] Logo
-    2. -[] Search feature with an icon.
-    3. -[] Avatar and Settings Icons. Must use React Icons.
+3. -[x] Header component. Which includes the following:
+    1. -[x] Logo
+    2. -[x] Search feature with an icon.
+    3. -[x] Avatar and Settings Icons. Must use React Icons.
 4. -[] Left-side Navigation Component. Which includes the following links:
     1. -[] Newsfeed
     2. -[] Messages

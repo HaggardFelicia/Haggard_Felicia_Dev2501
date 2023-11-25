@@ -1,5 +1,5 @@
 
-# 01 Components
+# ***01 Components***
 
 This branch contains reusable components. These components include:
 
@@ -25,9 +25,3 @@ This branch contains reusable components. These components include:
     3. Description
     4. Edit button (Use React Icons)
     5. Delete button (Use React Icons)
-7. Display all of the components on the App.js file.
-8. Styling your project:
-a. Use ONLY CSS-in-JS to style each component.
-b.  You can add the styled-components library to style CSS pseudo code. Ex. Buttons
-c. Use your own images and text. No lorem Ipsum.
-d. Choose your own colors using Coolors.co.

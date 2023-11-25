@@ -5,7 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #acbcbc;
 }
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
 
 /**========================================================================
  * *                      Color palette in Hex, HSL, & RGB
@@ -29,3 +31,15 @@ body {
       *antiflash-white: rgb(240, 243, 242);
  *
  *========================================================================**/
+#inputID::placeholder {
+     color: #09151F;
+     opacity: 1;
+}
+/* btnGrey: {
+     backgroundColor: "#28666e",
+     color: "#09151F",
+ },
+ btnBlack: {
+     backgroundColor: "#28666e",
+     color: "#09151F",
+ }, */
