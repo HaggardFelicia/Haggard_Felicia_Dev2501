@@ -44,6 +44,8 @@ const styles = {
         position: "absolute !important",
         top: "5%",
         left: "5% !important",
+        marginTop: "25px",
+        marginRight: "5%",
     },
     block: {
         display: "flex",

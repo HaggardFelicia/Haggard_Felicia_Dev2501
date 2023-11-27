@@ -4,7 +4,6 @@ import LeftNav from "./components/leftNavigation";
 import Form from "./components/Form";
 import PostCard from "./components/PostCard";
 import AdCard from "./components/AdCard";
-
 function App() {
   return (
     <div className="App" style={styles.container}>
@@ -12,8 +11,7 @@ function App() {
       <LeftNav />
       <Form />
       <PostCard h1Text="Testing" pText="testing" />
-      <AdCard h1Text="Testing" pText="testing" />{/* //!  Doesn't work  */}
-
+      <AdCard />
     </div>
   );
 }
