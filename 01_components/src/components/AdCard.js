@@ -22,7 +22,6 @@ const styles = {
     rightNav: {
         position: "relative !important",
         right: "0% !important",
-        left: "80%",
         width: "140px",
         height: "100vh",
         backgroundColor: "#28666e",
