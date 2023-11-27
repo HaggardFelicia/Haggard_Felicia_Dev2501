@@ -1,13 +1,13 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Merienda', 'cursive', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #acbcbc;
 }
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;600;700;900&display=swap');
 
 /**========================================================================
  * *                      Color palette in Hex, HSL, & RGB
@@ -33,7 +33,19 @@ body {
  *========================================================================**/
 #inputID::placeholder {
      color: #09151F;
+} 
+input::placeholder {
+     color: #28666e;
      opacity: 1;
+     font-family: "Merienda", "cursive ";
+     font-weight: 600;
+     font-size: 1rem;
+}
+#inputText{
+     height: 60px !important;
+}
+#pText{
+     height: 80px !important;
 }
 /* btnGrey: {
      backgroundColor: "#28666e",

@@ -4,7 +4,7 @@ import Avatar from '../images/Avatar.png';
 import { FaSearch } from 'react-icons/fa';
 import Icons from './Icons';
 import { IoSettings } from "react-icons/io5";
-
+import IconBtn from './IconBtn';
 const Header = props => {
     return (
         <header className="header" style={styles.header}>
@@ -23,7 +23,7 @@ const Header = props => {
             </div>
             <div style={styles.flexRow}>
                 <Icons IconImg={Avatar} ImageAlt="Bee Avatar" />
-                <button style={styles.button}>{<IoSettings/>}</button>
+                <IconBtn btnStyle={styles.button} btnText={<IoSettings/>} />
             </div>
         </header>
     );
@@ -41,7 +41,8 @@ const styles = {
         backgroundColor: "#678485"
     },
     h1:{
-        fontFamily: 'Merienda',
+        fontWeight: "900",
+        padding: '5px'
     },
     logo:{
         display: "flex",
@@ -50,7 +51,7 @@ const styles = {
         color: "#09151F"
     },
     searchContainer: {
-        border: "3px solid #28666e",
+        border: "2px solid #28666e",
         borderRadius: "5px",
         display: "flex",
         alignItems: "center",
@@ -67,7 +68,9 @@ const styles = {
         flex: "1",
         padding: "10px",
         backgroundColor: "#28666e",
-        color: "#f0f3f2"
+        color: "#f0f3f2",
+        fontWeight: "500",
+        fontFamily: "Merienda, cursive"
     },
     button: {
         border: "none",
