@@ -3,7 +3,7 @@ import ImageUrl from '../images/Social.png';
 import Avatar from '../images/Avatar.png';
 import { FaSearch } from 'react-icons/fa';
 import Icons from './Icons';
-import { IoSettings } from "react-icons/io5";
+// import { IoSettings } from "react-icons/io5";
 import IconBtn from './IconBtn';
 const Header = props => {
     return (
@@ -23,7 +23,7 @@ const Header = props => {
             </div>
             <div style={styles.flexRow}>
                 <Icons IconImg={Avatar} ImageAlt="Bee Avatar" />
-                <IconBtn btnStyle={styles.button} btnText={<IoSettings/>} />
+                {/* <IconBtn btnStyle={styles.button} btnText={<IoSettings/>} /> */}
             </div>
         </header>
     );
