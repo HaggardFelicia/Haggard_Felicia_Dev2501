@@ -8,7 +8,7 @@ const PostCard = props => {
     return (
         <div style={styles.card}>
             <div style={styles.avatar}>
-                <Icons IconImg={Avatar} ImageAlt="Avatar" />
+                <Icons IconImg={Avatar} ImageAlt="Avatar" style={styles.Icon}/>
             </div>
             <div style={styles.block}>
                 <h2 style={styles.bground}>Title</h2>
@@ -79,5 +79,5 @@ const styles = {
         padding: "15px",
         borderRadius: "5px",
         height: "20px",
-    }
+    },
 }

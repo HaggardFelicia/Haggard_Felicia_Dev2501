@@ -7,7 +7,7 @@ const Form = props => {
         <form>
             <div style={styles.form}>
                 <div style={styles.avatar}>
-                    <Icons IconImg={Avatar} ImageAlt="Avatar" />
+                    <Icons IconImg={Avatar} ImageAlt="Avatar" style={styles.Icons}/>
                 </div>
                 <div style={styles.block}>
                     <input  style={styles.input} type="text" placeholder="Post Title" />
@@ -79,5 +79,5 @@ const styles = {
         textAlign: "center",
         justifyContent: "center",
         margin: "5px",
-    }
+    },
 }

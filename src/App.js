@@ -9,10 +9,11 @@ class App extends Component {
     return (
       <div className="App" style={styles.container}>
         <Header />
+        <AdCard />
         <LeftNav />
         <Form />
         <PostCard h1Text="Testing" pText="testing" />
-        <AdCard />
+        
       </div>
     );
   }
@@ -22,7 +23,10 @@ export default App;
 
 const styles = {
   container: {
-    height: "100vh",
+    height: "100%",
     width: "100%",
+    display: "block",
+    backgroundColor: "#acbcbc",
+    fontFamily: "Merienda, cursive",  
   }
 }

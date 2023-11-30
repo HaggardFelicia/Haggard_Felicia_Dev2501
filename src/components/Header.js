@@ -9,7 +9,7 @@ const Header = props => {
     return (
         <header className="header" style={styles.header}>
             <div style={styles.logo}>
-                <Icons IconImg={ImageUrl} ImageAlt="Bee Social Logo" />
+                <Icons IconImg={ImageUrl} ImageAlt="Bee Social Logo" style={styles.Icon}/>
                 <h1 style={styles.h1}>Social</h1>
             </div>
             <div style={styles.searchContainer}>
@@ -22,7 +22,7 @@ const Header = props => {
                     style={styles.input}/>
             </div>
             <div style={styles.flexRow}>
-                <Icons IconImg={Avatar} ImageAlt="Bee Avatar" />
+                <Icons IconImg={Avatar} ImageAlt="Bee Avatar" style={styles.Icon}/>
                 <IconBtn btnStyle={styles.button} btnText={<IoSettings/>} />
             </div>
         </header>
@@ -37,7 +37,7 @@ const styles = {
         justifyContent: "space-between",
         alignItems: "center",
         padding: "1%",
-        borderBottom: "1px solid #28666e",
+        borderBottom: "4px solid #28666e",
         backgroundColor: "#678485"
     },
     h1:{
@@ -51,7 +51,7 @@ const styles = {
         color: "#09151F"
     },
     searchContainer: {
-        border: "2px solid #28666e",
+        border: "3px solid #28666e",
         borderRadius: "5px",
         display: "flex",
         alignItems: "center",
@@ -84,5 +84,5 @@ const styles = {
         display: "flex",
         flexDirection: "row",
         alignItems: "center"
-    }
+    },
 }
