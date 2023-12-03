@@ -7,7 +7,7 @@ const RightNav = props => {
     return (
         <div style={styles.rightNav}>
             <AdCard adStyle={styles.ad1}  ad={ad1} h1="Weekly Event" pText="This is a weekly event" />
-            <AdCard adStyle={styles.ad2} ad={ad2} h1="Ads in Canva!" pText="These ads were created by Felicia Haggard in Canva." />
+            <AdCard adStyle={styles.ad2} adImg={styles.adImg} ad={ad2} h1="Ads in Canva!" pText="These ads were created by Felicia Haggard in Canva." />
         </div>
     );
 }
@@ -22,26 +22,28 @@ const styles = {
         display: "flex",
         alignItems: "center",
         flexDirection: "column",
-        paddingTop: "10%",
+        paddingTop: "3%",
         float: "right",
-        position: "relative !important",
+        position: "absolute !important",
         top: "0",
         right: "0",
         overflow: "hidden",
-
     },
     ad1: {
-        top: "5%",
         position: "absolute !important",
-        padding: "5%",
         alignItems: "center",
         height: "10%",
+        margin: "10px 20px 100px 10px",
+        justifyContent: "center",
+        textAlign: "left",
     },
     ad2: {
-        top: "20%",
         position: "absolute !important",
-        padding: "5%",
         alignItems: "center",
         height: "10%",
-    }
+        justifyContent: "center",
+        margin: "120px 30px 10px 0px",
+        paddingLeft: "60px",
+        textAlign: "left",
+    },
 };
