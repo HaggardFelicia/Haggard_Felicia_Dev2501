@@ -9,8 +9,13 @@ export default Icons;
 
 const styles = {
     Icons: {
-        height: "20%",
+        height: "200px",
         cursor: "pointer",
-        borderRadius: "5px"
+        borderRadius: "5px",
+        alignItems: "center",
+        justifyContent: "center",
+        display: "flex",
+        flexDirection: "column",
+        
     }
 }
