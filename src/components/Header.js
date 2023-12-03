@@ -68,7 +68,7 @@ const styles = {
         flex: "1",
         padding: "10px",
         backgroundColor: "#28666e",
-        color: "#f0f3f2",
+        color: "#CED8D7",
         fontWeight: "500",
         fontFamily: "Merienda, cursive"
     },

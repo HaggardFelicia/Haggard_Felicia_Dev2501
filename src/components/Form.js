@@ -57,7 +57,7 @@ const styles = {
         border: "none",
         margin: "5px",
         padding: "10px",
-        backgroundColor: "#f0f3f2",
+        backgroundColor: "#CED8D7",
         color: '#09151F',
         fontFamily: "Merienda, cursive",
         fontSize: "1.25rem",

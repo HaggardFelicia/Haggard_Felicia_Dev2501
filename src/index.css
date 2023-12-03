@@ -16,19 +16,19 @@ body {
       *--caribbean-current:#28666e;
       *--slate-gray: #678485;
       *--ash-gray: #acbcbc;
-      *--antiflash-white: #f0f3f2;
+      *--platinum: #CED8D7
  *   HSL
       *--rich-black: hsl(207, 55%, 8%);
       *--caribbean-current:hsl(187, 47%, 29%);
       *--slate-gray: hsl(182, 13%, 46%);
       *--ash-gray: hsl(180, 11%, 71%);
-      *--antiflash-white: hsl(160, 11%, 95%);
+      *--platinum: hsl(174, 11%, 83%);
  *   RGB
       *rich-black: rgb(9, 21, 31);
       *caribbean-current: rgb(40, 102, 110);
       *slate-gray: rgb(103, 132, 133);
       *ash-gray: rgb(172, 188, 188);
-      *antiflash-white: rgb(240, 243, 242);
+      *platinum: rgb(206, 216, 215);
  *
  *========================================================================**/
 #inputID::placeholder {

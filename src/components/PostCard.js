@@ -1,6 +1,6 @@
 import React from 'react';
 import Icons from './Icons';
-import Avatar from '../images/Avatar.png';
+// import Avatar from '../images/Avatar.png';
 import IconBtn from './IconBtn';
 import { FaEdit, FaTimes  } from "react-icons/fa";
 
@@ -8,11 +8,11 @@ const PostCard = props => {
     return (
         <div style={styles.card}>
             <div style={styles.avatar}>
-                <Icons IconImg={Avatar} ImageAlt="Avatar" style={styles.Icon}/>
+                <Icons IconImg={props.val.pAvatar} ImageAlt={props.val.alt} style={styles.Icon}/>
             </div>
             <div style={styles.block}>
-                <h2 style={styles.bground}>Title</h2>
-                <p id='pText' style={styles.bground}>Paragraph.</p>
+                <h2 style={styles.bground}>{props.val.postName}</h2>
+                <p id='pText' style={styles.bground}>{props.val.postContent}</p>
             </div>
             <div style={styles.btnDiv}>
                 <IconBtn btnStyle={styles.button} btnText={<FaEdit/>} />
@@ -53,6 +53,8 @@ const styles = {
         width: "80%",
         textAlign: "left",
         margin: "5px",
+        backgroundColor: "#CED8D7",
+        borderRadius: "10px",
     },
     button: {
         position: "relative",
@@ -75,7 +77,6 @@ const styles = {
         marginTop: "5%"
     },
     bground:{
-        backgroundColor: "#f0f3f2",
         padding: "15px",
         borderRadius: "5px",
         height: "20px",

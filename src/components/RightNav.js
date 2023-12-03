@@ -28,6 +28,7 @@ const styles = {
         top: "0",
         right: "0",
         overflow: "hidden",
+        paddingBottom: "5%",
     },
     ad1: {
         position: "absolute !important",
