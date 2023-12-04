@@ -4,14 +4,14 @@ import Icons from './Icons';
 import Avatar from '../images/Avatar.png';
 const Form = props => {
     return (
-        <form>
+        <form onSubmit={props.addItem}>
             <div style={styles.form}>
                 <div style={styles.avatar}>
                     <Icons IconImg={Avatar} ImageAlt="Avatar" style={styles.Icons}/>
                 </div>
                 <div style={styles.block}>
-                    <input  style={styles.input} type="text" placeholder="Post Title" />
-                    <input id='inputText' style={styles.input} type="text" placeholder="Post Text" />
+                    <input name='postName' value={props.postName} style={styles.input} type="text" placeholder="Post Title" onChange={props.getInput} />
+                    <input id='inputText' name='postContent' value={props.postContent} style={styles.input} type="text" placeholder="Post Text" onChange={props.getInput}/>
                 </div>
                 <Btn btnText="Post" btnStyle={styles.btn} />
             </div>

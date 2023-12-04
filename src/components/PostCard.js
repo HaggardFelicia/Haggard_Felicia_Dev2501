@@ -11,12 +11,12 @@ const PostCard = props => {
                 <Icons IconImg={props.val.pAvatar} ImageAlt={props.val.alt} style={styles.Icon}/>
             </div>
             <div style={styles.block}>
-                <h2 style={styles.bground}>{props.val.postName}</h2>
+                <h2 style={styles.heading}>{props.val.postName}</h2>
                 <p id='pText' style={styles.bground}>{props.val.postContent}</p>
             </div>
             <div style={styles.btnDiv}>
                 <IconBtn btnStyle={styles.button} btnText={<FaEdit/>} />
-                <IconBtn btnStyle={styles.button} btnText={<FaTimes/>} />
+                <IconBtn btn='Delete' onClick={props.delete} btnStyle={styles.button} btnText={<FaTimes/>} />
             </div>
         </div>
     );
@@ -78,7 +78,10 @@ const styles = {
     },
     bground:{
         padding: "15px",
-        borderRadius: "5px",
-        height: "20px",
+        textAlign: "center",
+    },
+    heading: {
+        textAlign: "left",
+        padding: "15px",
     },
 }

@@ -13,14 +13,14 @@
    c. -[x] Description
    d. -[x] Edit button (Use React Icons)
    e. -[x] Delete button (Use React Icons)
- 4. -[] On the App.js file create a state to hold a post object. The post should include the following:
-   a. -[] avatar
-   b. -[] post name
-   c. -[] post description
+ 4. -[x] On the App.js file create a state to hold a post object. The post should include the following:
+   a. -[x] avatar
+   b. -[x] post name
+   c. -[x] post description
  5. -[] On the App.js file, display the items that are being held in the state. It should include the following:
-   a. -[] Users must be able to view the posts in the state.
+   a. -[x] Users must be able to view the posts in the state.
    b. -[] Use the render to loop through the items in the state.
-   c. -[] You can use the card/list component that you created in the previous assignment.
+   c. -[x] You can use the card/list component that you created in the previous assignment.
  6. -[] On the App.js file, create an add function. It should include the following:
    a. -[] Users must be able to add a new card to the list.
    b. -[] Use the spread operator to update the state.
