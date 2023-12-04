@@ -30,6 +30,14 @@ class App extends Component {
     ]
   }
 
+  //componentDidMount() 
+  componentDidMount() {
+    console.log("componentDidMount");
+    setTimeout(() => {
+      this.setState({color: "#acbcbc"})
+    }, 3000);
+  }
+
   //function for input values
   getInput = (e) => {
     this.setState({[ e.target.pAvatar]: e.target.value,
