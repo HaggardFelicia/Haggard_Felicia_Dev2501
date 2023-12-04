@@ -1,27 +1,9 @@
 
-# ***01 Components***
+# ***02 Application***
 
-This branch contains reusable components. These components include:
+This branch contains:
 
-1. Button Component for your application.
-2. Form component for adding a post. Which includes the following:
-    1. input for the post title.
-    2. input for the post description.
-3. Header component. Which includes the following:
-    1. Logo
-    2. Search feature with an icon.
-    3. Avatar and Settings Icons. Must use React Icons.
-4. Left-side Navigation Component. Which includes the following links:
-    1. Newsfeed
-    2. Messages
-    3. Watch
-5. AdCard Component. Which includes the following:
-    1. Contain an image, title, and subtitle using props. You must pass information from the parent to the child component.
-    2. Display the AdCard component in the right navigation.
-    3. There must be two different ads.  
-6. A PostCard component. Which includes the following:
-    1. Avatar
-    2. Title
-    3. Description
-    4. Edit button (Use React Icons)
-    5. Delete button (Use React Icons)
+ 1. A state that is displayed in App.js
+ 2. An add function
+ 3. A delete function
+ 4. componentDidMount lifecycle
