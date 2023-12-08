@@ -5,8 +5,8 @@ import Form from "./components/Form";
 import PostCard from "./components/PostCard";
 import RightNav from "./components/RightNav";
 import AvatarUrl from "./images/Avatar.png";
-class App extends Component {
 
+class App extends Component {
   state = {
     postList: [
       {
@@ -27,7 +27,8 @@ class App extends Component {
         postName: 'Post Name 3',
         postContent: 'Post description 3',
       }
-    ]
+    ],
+    color: 'red'
   }
 
   //componentDidMount() 
@@ -40,10 +41,11 @@ class App extends Component {
 
   //function for input values
   getInput = (e) => {
-    this.setState({[ e.target.pAvatar]: e.target.value,
-                    [e.target.alt]: e.target.value,
-                    [e.target.postName]: e.target.value,
-                    [e.target.postContent]: e.target.value });
+    this.setState({[ e.target.name]: e.target.value
+                    // [e.target.alt]: e.target.value,
+                    // [e.target.postName]: e.target.value,
+                    // [e.target.postContent]: e.target.value 
+                  });
   }
 
   //add item function
@@ -90,7 +92,6 @@ class App extends Component {
         <LeftNav />
         <Form getInput={this.getInput} addItem={this.addItem}/>
         {postState}
-            
       </div>
     );
   }

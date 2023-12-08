@@ -23,7 +23,7 @@ const Header = props => {
             </div>
             <div style={styles.flexRow}>
                 <Icons IconImg={Avatar} ImageAlt="Bee Avatar" style={styles.Icon}/>
-                <IconBtn btnStyle={styles.button} btnText={<IoSettings/>} />
+                <IconBtn btnStyle={styles.button} btnText={<io5 IoSettings/>} />
             </div>
         </header>
     );
