@@ -5,6 +5,7 @@ import { FaSearch } from 'react-icons/fa';
 import Icons from './Icons';
 import { IoSettings } from "react-icons/io5";
 import IconBtn from './IconBtn';
+
 const Header = props => {
     return (
         <header className="header" style={styles.header}>

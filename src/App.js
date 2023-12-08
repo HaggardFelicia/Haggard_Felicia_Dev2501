@@ -41,11 +41,7 @@ class App extends Component {
 
   //function for input values
   getInput = (e) => {
-    this.setState({[ e.target.name]: e.target.value
-                    // [e.target.alt]: e.target.value,
-                    // [e.target.postName]: e.target.value,
-                    // [e.target.postContent]: e.target.value 
-                  });
+    this.setState({[ e.target.name]: e.target.value});
   }
 
   //add item function
@@ -55,10 +51,8 @@ class App extends Component {
       postList: [
         ...this.state.postList,
         {
-          pAvatar: this.state.pAvatar,
-          alt: this.state.alt,
           postName: this.state.postName,
-          postContent: this.state.postContent,
+          postContent: this.state.postContent
         }
       ]
     })
@@ -82,8 +76,8 @@ class App extends Component {
                   delete={()=>this.removeItem(i)}
               />
     })
+    
 // loop through the state
-
 
     return (
       <div className="App" style={styles.container}>

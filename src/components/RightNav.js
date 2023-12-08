@@ -11,6 +11,7 @@ const RightNav = props => {
         </div>
     );
 }
+
 export default RightNav;
 
 const styles = {
