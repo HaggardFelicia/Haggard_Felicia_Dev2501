@@ -29,22 +29,26 @@ const styles = {
         right: "0",
         overflow: "hidden",
         paddingBottom: "5%",
+        marginHorizontal: "auto"
     },
     ad1: {
         position: "absolute !important",
         alignItems: "center",
         height: "10%",
-        margin: "10px 20px 100px 10px",
+        marginHorizontal: "auto",
         justifyContent: "center",
         textAlign: "left",
+        width: "50%",
+        marginBottom: "50%"
     },
     ad2: {
         position: "absolute !important",
         alignItems: "center",
         height: "10%",
         justifyContent: "center",
-        margin: "120px 30px 10px 0px",
-        paddingLeft: "60px",
         textAlign: "left",
+        marginHorizontal: "auto",
+        width: "50%",
+        marginTop: "100%"
     },
 };

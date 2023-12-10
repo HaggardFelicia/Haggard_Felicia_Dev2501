@@ -4,8 +4,10 @@ const AdCard = props => {
     return(
         <div style={props.adStyle}>
             <Icons style={props.adImg} IconImg={props.ad} ImageAlt="Weekly Event ad" />
-            <h1 style={styles.h1}>{props.h1}</h1>
-            <p style={styles.p}>{props.pText}</p>
+            <div style={styles.padding}>
+                <h1 style={styles.h1}>{props.h1}</h1>
+                <p style={styles.p}>{props.pText}</p>
+            </div>
         </div>    
     );
 }
@@ -20,5 +22,12 @@ const styles = {
         fontSize: ".8rem",
         marginBottom: "10% !important",
         paddingBottom: "10% !important",
+        paddingHorizontal: "auto",
+        marginHorizontal: "auto",
+        overflow: "hidden",
+        width: "100%"
+    },
+    padding:{
+        width: "100%"
     }
 }
