@@ -19,19 +19,19 @@
    3. -[x] post description
  5. -[ ] On the App.js file, display the items that are being held in the state. It should include the following:
    1. -[x] Users must be able to view the posts in the state.
-   2. -[] Use the render to loop through the items in the state.
+   2. -[ ] Use the render to loop through the items in the state.
    3. -[x] You can use the card/list component that you created in the previous assignment.
- 6. -[] On the App.js file, create an add function. It should include the following:
-   1. -[] Users must be able to add a new card to the list.
-   2. -[] Use the spread operator to update the state.
- 7. -[] On the App.js file, create a delete function. It should include the following:
-   1. -[] Users must be able to delete the correct card.
-   2. -[] Use the filter method for the delete function.
- 8. -[] On the App.js file, use componentDidMount lifecycle to change the color of something on your application. This can be anything of your choice.
-   1. -[] Include a color object in the state.
-   2. -[] Use the componentDidMount and setTimeout methods to change the color after the initial render.  
- 9. -[] Optional: Extra Credit (+ 5 points)
-   1. -[] In the App.js file, create an edit function. It should include the following:
-   2. -[] Users must be able to edit the correct card.
-   3. -[] Use the filter method for the edit function.
-    1. -[] Figure out how to write this function on your own. Limited help will be given.
+ 6. -[ ] On the App.js file, create an add function. It should include the following:
+   1. -[ ] Users must be able to add a new card to the list.
+   2. -[ ] Use the spread operator to update the state.
+ 7. -[ ] On the App.js file, create a delete function. It should include the following:
+   1. -[ ] Users must be able to delete the correct card.
+   2. -[ ] Use the filter method for the delete function.
+ 8. -[ ] On the App.js file, use componentDidMount lifecycle to change the color of something on your application. This can be anything of your choice.
+   1. -[ ] Include a color object in the state.
+   2. -[ ] Use the componentDidMount and setTimeout methods to change the color after the initial render.  
+ 9. -[ ] Optional: Extra Credit (+ 5 points)
+   1. -[ ] In the App.js file, create an edit function. It should include the following:
+   2. -[ ] Users must be able to edit the correct card.
+   3. -[ ] Use the filter method for the edit function.
+    1. -[ ] Figure out how to write this function on your own. Limited help will be given.
