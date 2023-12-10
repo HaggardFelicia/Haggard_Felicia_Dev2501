@@ -17,7 +17,7 @@
    1. -[x] avatar
    2. -[x] post name
    3. -[x] post description
- 5. -[] On the App.js file, display the items that are being held in the state. It should include the following:
+ 5. -[ ] On the App.js file, display the items that are being held in the state. It should include the following:
    1. -[x] Users must be able to view the posts in the state.
    2. -[] Use the render to loop through the items in the state.
    3. -[x] You can use the card/list component that you created in the previous assignment.
