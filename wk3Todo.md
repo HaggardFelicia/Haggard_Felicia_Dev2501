@@ -2,17 +2,17 @@
 # Todo
 
 1)	-[ ] Hooks - Implementing React Hooks. Functional Components
-    1. -[ ] Use your project from module 2.
+    1. -[x] Use your project from module 2.
     2. -[ ] Updating/Creating the Newsfeed.js parent component.
-        1. -[ ] Make a copy of the App.js file.
-        2. -[ ] Rename the copy to Newsfeed.js.
-        3. -[ ] Move the Newsfeed.js file into the pages folder.
+        1. -[x] Make a copy of the App.js file.
+        2. -[x] Rename the copy to Newsfeed.js.
+        3. -[x] Move the Newsfeed.js file into the pages folder.
         4. -[ ] Change the name of the component to match the Newsfeed naming convention.
-        5. -[ ] Update the links as needed.
-    3. -[ ] Create 3 new views (pages). They must be functional, parent components.
-        1. -[ ] Dashboard, Messages, and Settings
-        2. -[ ] Include page titles on all new views(pages).
-        3. -[ ] No other content needs to be added for these components.
+        5. -[x] Update the links as needed.
+    3. -[x] Create 3 new views (pages). They must be functional, parent components.
+        1. -[x] Dashboard, Messages, and Settings
+            1. -[x] Include page titles on all new views(pages).
+            2. -[x] No other content needs to be added for these components.
 2)	-[ ] Routing - Add React Router to this application.
     1. -[ ] Use your previous Navigation component. Include the following links in your navigation using routing.
         1. -[ ] Dashboard
