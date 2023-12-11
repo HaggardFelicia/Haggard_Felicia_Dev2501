@@ -1,5 +1,6 @@
 import React from 'react';
 import Btn from './Btn';
+
 const leftNav = props => {
     return (
         <div style={styles.leftNav}>

@@ -5,6 +5,7 @@ const Icons = props => {
         <img src={props.IconImg} alt={props.ImageAlt} style={styles.Icons}/>
     );
 }
+
 export default Icons;
 
 const styles = {

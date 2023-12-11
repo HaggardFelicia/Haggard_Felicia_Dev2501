@@ -5,6 +5,7 @@ import Form from "./components/Form";
 import PostCard from "./components/PostCard";
 import RightNav from "./components/RightNav";
 import AvatarUrl from "./images/Avatar.png";
+
 class App extends Component {
 
   state = {
