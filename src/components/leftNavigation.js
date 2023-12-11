@@ -7,7 +7,6 @@ const leftNav = props => {
             <Link to="/Dashboard" style={styles.button}>Dashboard</Link>
             <Link to="/Messages" style={styles.button}>Messages</Link>
             <Link to="/Newsfeed" style={styles.button}>Newsfeed</Link>
-            <Link to="/Settings" style={styles.button}>Settings</Link>
         </div>
     );
 }

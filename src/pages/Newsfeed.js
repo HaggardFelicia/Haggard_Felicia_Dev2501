@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 import Form from "../components/Form";
 import PostCard from "../components/PostCard";
-import RightNav from "../components/RightNav";
 import AvatarUrl from "../images/Avatar.png";
 
 class App extends Component {
@@ -76,7 +75,6 @@ class App extends Component {
 
     return (
       <div className="App" style={styles.container}>
-        <RightNav />
         <Form getInput={this.getInput} addItem={this.addItem}/>
         {postState}
       </div>
@@ -107,5 +105,5 @@ const styles = {
     borderRadius: "15px",
     padding: "5% 10%",
     marginTop: "3%"
-  }
+  },
 }

@@ -2,6 +2,7 @@ import React from "react";
 import {Routes, Route} from "react-router-dom";
 import Header from "./components/Header";
 import LeftNav from "./components/leftNavigation";
+import RightNav from "./components/RightNav";
 import Dashboard from "./pages/Dashboard";
 import Messages from "./pages/Messages";
 import Newsfeed from "./pages/Newsfeed";
@@ -11,6 +12,7 @@ function App(){
   return(
     <div style={styles.container}>
       <Header/>
+      <RightNav/>
       <LeftNav/>
       <main>
         <section>
