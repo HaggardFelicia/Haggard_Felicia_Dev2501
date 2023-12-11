@@ -4,7 +4,8 @@ import LeftNav from "../components/leftNavigation";
 import Form from "../components/Form";
 import PostCard from "../components/PostCard";
 import RightNav from "../components/RightNav";
-import AvatarUrl from "./images/Avatar.png";
+import AvatarUrl from "../images/Avatar.png";
+
 class App extends Component {
 
   state = {
@@ -72,8 +73,8 @@ class App extends Component {
                   delete={()=>this.removeItem(i)}
               />
     })
-// loop through the state
 
+// loop through the state
 
     return (
       <div className="App" style={styles.container}>

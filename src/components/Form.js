@@ -2,6 +2,7 @@ import React from 'react';
 import Btn from './Btn';
 import Icons from './Icons';
 import Avatar from '../images/Avatar.png';
+
 const Form = props => {
     return (
         <form onSubmit={props.addItem}>

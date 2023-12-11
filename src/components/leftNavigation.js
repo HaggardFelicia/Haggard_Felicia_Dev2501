@@ -1,8 +1,10 @@
 import React from 'react';
 import Btn from './Btn';
+
 const leftNav = props => {
     return (
         <div style={styles.leftNav}>
+            <Btn btnStyle={styles.button} btnText="Dashboard" />
             <Btn btnStyle={styles.button} btnText="Newsfeed" />
             <Btn btnStyle={styles.button} btnText="Messages" />
             <Btn btnStyle={styles.button} btnText="Watch" />
@@ -26,13 +28,13 @@ const styles = {
     button:{
         color: "#09151F",
         backgroundColor: "#678485",
-        paddingBlock: "5px",
-        margin: "8%",
+        padding: "10px",
+        margin: "10%",
         border: "none",
         borderRadius: "5px",
         fontFamily: "Merienda, cursive",
         fontWeight: "700",
-        width: "80px",
+        width: "100px",
         cursor: "pointer"
     }
 }

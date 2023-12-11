@@ -21,7 +21,9 @@ const PostCard = props => {
         </div>
     );
 }
+
 export default PostCard;
+
 const styles = {
     card: {
         display: "flex",

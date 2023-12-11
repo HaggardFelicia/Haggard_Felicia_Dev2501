@@ -1,91 +1,28 @@
-import React, {Component} from "react";
+import React from "react";
+import {Routes, Route} from "react-router-dom";
 import Header from "./components/Header";
 import LeftNav from "./components/leftNavigation";
-import Form from "./components/Form";
-import PostCard from "./components/PostCard";
-import RightNav from "./components/RightNav";
-import AvatarUrl from "./images/Avatar.png";
-class App extends Component {
+import Dashboard from "./pages/Dashboard";
+import Messages from "./pages/Messages";
+import Newsfeed from "./pages/Newsfeed";
 
-  state = {
-    postList: [
-      {
-        pAvatar: AvatarUrl,
-        alt: "avatar",
-        postName: 'Post Name',
-        postContent: 'Post description',
-      },
-      {
-        pAvatar: AvatarUrl,
-        alt: "avatar",
-        postName: 'Post Name 2',
-        postContent: 'Post description 2',
-      },
-      {
-        pAvatar: AvatarUrl,
-        alt: "avatar",
-        postName: 'Post Name 3',
-        postContent: 'Post description 3',
-      }
-    ]
-  }
-
-  //function for input values
-  getInput = (e) => {
-    this.setState({[ e.target.pAvatar]: e.target.value,
-                    [e.target.alt]: e.target.value,
-                    [e.target.postName]: e.target.value,
-                    [e.target.postContent]: e.target.value });
-  }
-
-  //add item function
-  addItem= (e) => {
-    e.preventDefault();
-    this.setState({
-      postList: [
-        ...this.state.postList,
-        {
-          pAvatar: this.state.pAvatar,
-          alt: this.state.alt,
-          postName: this.state.postName,
-          postContent: this.state.postContent,
-        }
-      ]
-    })
-    e.target.reset();
-  }
-
-  //delete function
-  removeItem = key => {
-    const newList = [...this.state.postList];
-    newList.splice(key, 1);
-    this.setState(()=>({
-      postList: newList
-    }));
-  }
-
-  render() {
-    let postState = this.state.postList.map((element, i) => {
-      return <PostCard 
-                  key={i} 
-                  val={element}
-                  delete={()=>this.removeItem(i)}
-              />
-    })
-// loop through the state
-
-
-    return (
-      <div className="App" style={styles.container}>
-        <Header />
-        <RightNav />
-        <LeftNav />
-        <Form getInput={this.getInput} addItem={this.addItem}/>
-        {postState}
-            
-      </div>
-    );
-  }
+function App(){
+  return(
+    <div style={styles.container}>
+      <Header/>
+      <main>
+        <LeftNav/>
+        <section>
+          <Routes>
+            <Route path="/" element={<Dashboard/>}/>
+            <Route path="dashboard" element={<Dashboard/>}/>
+            <Route path="Messages" element={<Messages/>}/>
+            <Route path="Newsfeed" element={<Newsfeed/>}/>
+          </Routes>
+        </section>
+      </main>
+    </div>
+  )
 }
 
 export default App;
