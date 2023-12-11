@@ -1,13 +1,13 @@
 import React from 'react';
-import Btn from './Btn';
+import { Link } from 'react-router-dom';
 
 const leftNav = props => {
     return (
         <div style={styles.leftNav}>
-            <Btn btnStyle={styles.button} btnText="Dashboard" />
-            <Btn btnStyle={styles.button} btnText="Newsfeed" />
-            <Btn btnStyle={styles.button} btnText="Messages" />
-            <Btn btnStyle={styles.button} btnText="Watch" />
+            <Link to="/Dashboard" style={styles.button}>Dashboard</Link>
+            <Link to="/Messages" style={styles.button}>Messages</Link>
+            <Link to="/Newsfeed" style={styles.button}>Newsfeed</Link>
+            <Link to="/Settings" style={styles.button}>Settings</Link>
         </div>
     );
 }

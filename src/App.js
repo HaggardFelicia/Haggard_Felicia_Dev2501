@@ -5,19 +5,21 @@ import LeftNav from "./components/leftNavigation";
 import Dashboard from "./pages/Dashboard";
 import Messages from "./pages/Messages";
 import Newsfeed from "./pages/Newsfeed";
+import Settings from "./pages/Settings";
 
 function App(){
   return(
     <div style={styles.container}>
       <Header/>
+      <LeftNav/>
       <main>
-        <LeftNav/>
         <section>
           <Routes>
             <Route path="/" element={<Dashboard/>}/>
             <Route path="dashboard" element={<Dashboard/>}/>
             <Route path="Messages" element={<Messages/>}/>
             <Route path="Newsfeed" element={<Newsfeed/>}/>
+            <Route path="Settings" element={<Settings/>}/>
           </Routes>
         </section>
       </main>
