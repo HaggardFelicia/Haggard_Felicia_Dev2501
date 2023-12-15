@@ -3,16 +3,11 @@ import {Routes, Route} from "react-router-dom";
 import Header from "./components/Header";
 import LeftNav from "./components/leftNavigation";
 import RightNav from "./components/RightNav";
-<<<<<<< HEAD
-import AvatarUrl from "./images/Avatar.png";
-
-class App extends Component {
-=======
+//import AvatarUrl from "./images/Avatar.png";
 import Dashboard from "./pages/Dashboard";
 import Messages from "./pages/Messages";
 import Newsfeed from "./pages/Newsfeed";
 import Settings from "./pages/Settings";
->>>>>>> dev
 
 function App(){
   return(

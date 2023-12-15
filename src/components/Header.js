@@ -3,13 +3,8 @@ import ImageUrl from '../images/Social.png';
 import Avatar from '../images/Avatar.png';
 import { FaSearch } from 'react-icons/fa';
 import Icons from './Icons';
-<<<<<<< HEAD
-import { IoSettings } from "react-icons/io5";
-import IconBtn from './IconBtn';
-
-=======
 import { Link } from 'react-router-dom';
->>>>>>> dev
+
 const Header = props => {
     return (
         <header className="header" style={styles.header}>

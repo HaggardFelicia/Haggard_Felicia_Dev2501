@@ -1,9 +1,5 @@
 import React from 'react';
-<<<<<<< HEAD
-import Btn from './Btn';
-=======
 import { Link } from 'react-router-dom';
->>>>>>> dev
 
 const leftNav = props => {
     return (
