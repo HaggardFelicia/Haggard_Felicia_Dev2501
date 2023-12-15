@@ -29,8 +29,10 @@ const styles = {
         top: "0",
         right: "0",
         overflow: "hidden",
-        paddingBottom: "5%",
-        marginHorizontal: "auto"
+        marginHorizontal: "auto",
+        zIndex: "100",
+        marginBottom: "0",
+        paddingBottom: "3px"
     },
     ad1: {
         position: "absolute !important",

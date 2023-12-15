@@ -1,12 +1,16 @@
 import React from 'react';
+<<<<<<< HEAD
 import Btn from './Btn';
+=======
+import { Link } from 'react-router-dom';
+>>>>>>> dev
 
 const leftNav = props => {
     return (
         <div style={styles.leftNav}>
-            <Btn btnStyle={styles.button} btnText="Newsfeed" />
-            <Btn btnStyle={styles.button} btnText="Messages" />
-            <Btn btnStyle={styles.button} btnText="Watch" />
+            <Link to="/Dashboard" style={styles.button}>Dashboard</Link>
+            <Link to="/Messages" style={styles.button}>Messages</Link>
+            <Link to="/Newsfeed" style={styles.button}>Newsfeed</Link>
         </div>
     );
 }
@@ -27,13 +31,13 @@ const styles = {
     button:{
         color: "#09151F",
         backgroundColor: "#678485",
-        paddingBlock: "5px",
-        margin: "8%",
+        padding: "10px",
+        margin: "10%",
         border: "none",
         borderRadius: "5px",
         fontFamily: "Merienda, cursive",
         fontWeight: "700",
-        width: "80px",
+        width: "100px",
         cursor: "pointer"
     }
 }

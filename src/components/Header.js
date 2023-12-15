@@ -3,9 +3,13 @@ import ImageUrl from '../images/Social.png';
 import Avatar from '../images/Avatar.png';
 import { FaSearch } from 'react-icons/fa';
 import Icons from './Icons';
+<<<<<<< HEAD
 import { IoSettings } from "react-icons/io5";
 import IconBtn from './IconBtn';
 
+=======
+import { Link } from 'react-router-dom';
+>>>>>>> dev
 const Header = props => {
     return (
         <header className="header" style={styles.header}>
@@ -23,8 +27,9 @@ const Header = props => {
                     style={styles.input}/>
             </div>
             <div style={styles.flexRow}>
-                <Icons IconImg={Avatar} ImageAlt="Bee Avatar" style={styles.Icon}/>
-                <IconBtn btnStyle={styles.button} btnText={<IoSettings/>} />
+                <Link to="/Settings" style={styles.button}>
+                    <Icons IconImg={Avatar} ImageAlt="Bee Avatar" style={styles.Icon}/>
+                </Link>
             </div>
         </header>
     );
