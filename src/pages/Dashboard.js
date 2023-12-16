@@ -1,12 +1,19 @@
 import React, {useState} from "react";
-import smallChart from "../components/charts/smallChart";
+import SmallChart from "../components/charts/smallChart";
 
 function Dashboard(){
-        <h1 style={styles.h1}>Dashboard</h1>  
         const [chartSmall] = useState([
             {chartHeader: 'chart header ex'},
             {chartHeader: 'chart header ex'}
         ]);
+
+        return(
+            <section style={styles.container}>
+                <header style={styles.h1}>
+                    <h1>Dashboard</h1>
+                </header>
+            </section>
+        )
 }
 
 

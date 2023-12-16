@@ -46,7 +46,7 @@ const data = [
     },
 ];
 
-const smallChart=({chartSmall})=>{
+const SmallChart=({chartSmall})=>{
     return(
         <article key={chartSmall.id} style={styles.card}>
             <h1 style={styles.h1}>{chartSmall.chartHeader}</h1>
@@ -64,7 +64,7 @@ const smallChart=({chartSmall})=>{
     )
 }
 
-export default smallChart;
+export default SmallChart;
 
 const styles={
     card: {
