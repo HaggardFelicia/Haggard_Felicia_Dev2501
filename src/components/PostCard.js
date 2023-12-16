@@ -33,7 +33,7 @@ const styles = {
         width: "40%",
         height: "30%",
         position: "absolute",
-        top: "60%",
+        top: "80%",
         left: "22%",
         right: "22%",
         zIndex: "100",

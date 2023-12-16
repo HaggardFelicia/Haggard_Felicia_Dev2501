@@ -25,14 +25,14 @@ const styles = {
         flexDirection: "column",
         paddingTop: "3%",
         float: "right",
-        position: "absolute !important",
-        top: "0",
-        right: "0",
-        overflow: "hidden",
-        marginHorizontal: "auto",
+        //position: "absolute !important",
+        //top: "0",
+       // right: "0",
+       // overflow: "hidden",
+       // marginHorizontal: "auto",
         zIndex: "100",
-        marginBottom: "0",
-        paddingBottom: "3px"
+       //marginBottom: "0",
+    // paddingBottom: "3px"
     },
     ad1: {
         position: "absolute !important",

@@ -31,7 +31,7 @@ const styles = {
         width: "40%",
         height: "20%",
         position: "absolute",
-        top: "20%",
+        top: "30%",
         left: "22%",
         right: "22%",
         zIndex: "100",
