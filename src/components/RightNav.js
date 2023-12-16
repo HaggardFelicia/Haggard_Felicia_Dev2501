@@ -17,7 +17,7 @@ export default RightNav;
 const styles = {
     rightNav: {
         width: "15%",
-        height: "100vh",
+        minHeight: "100vh",
         backgroundColor: "#28666e",
         borderLeft: "10px solid #678485",
         display: "flex",
@@ -25,33 +25,28 @@ const styles = {
         flexDirection: "column",
         paddingTop: "3%",
         float: "right",
-        //position: "absolute !important",
-        //top: "0",
-       // right: "0",
-       // overflow: "hidden",
-       // marginHorizontal: "auto",
         zIndex: "100",
-       //marginBottom: "0",
-    // paddingBottom: "3px"
+        //paddingBottom: "3px"
     },
     ad1: {
         position: "absolute !important",
         alignItems: "center",
-        height: "10%",
+        height: "5%",
         marginHorizontal: "auto",
         justifyContent: "center",
         textAlign: "left",
         width: "50%",
-        marginBottom: "50%"
+        marginBottom: "5%"
     },
     ad2: {
         position: "absolute !important",
         alignItems: "center",
-        height: "10%",
+        height: "5%",
         justifyContent: "center",
         textAlign: "left",
         marginHorizontal: "auto",
         width: "50%",
-        marginTop: "100%"
+        marginTop: "5%",
+        paddingBottom: "25%"
     },
 };

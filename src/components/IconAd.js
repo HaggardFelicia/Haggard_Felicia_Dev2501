@@ -10,7 +10,7 @@ export default Icons;
 
 const styles = {
     Icons: {
-        height: "200px",
+        height: "175px",
         cursor: "pointer",
         borderRadius: "5px",
         alignItems: "center",

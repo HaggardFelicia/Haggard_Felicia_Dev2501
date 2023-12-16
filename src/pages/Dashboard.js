@@ -14,7 +14,7 @@ export default Dashboard;
 
 const styles={
     container: {
-        height: "100%",
+        minHeight: "100%",
         width: "100%",
         backgroundColor: "#acbcbc",
     },

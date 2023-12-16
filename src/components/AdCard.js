@@ -17,7 +17,7 @@ export default AdCard;
 
 const styles = {
     h1: {
-        fontSize: "1.2rem",
+        fontSize: "1rem",
     },
     p: {
         fontSize: ".8rem",
