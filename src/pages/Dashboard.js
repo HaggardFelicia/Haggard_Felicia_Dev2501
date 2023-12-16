@@ -9,9 +9,14 @@ function Dashboard(){
 
         return(
             <section style={styles.container}>
-                <header style={styles.h1}>
-                    <h1>Dashboard</h1>
+                <header >
+                    <h1 style={styles.h1}>Dashboard</h1>
                 </header>
+                <p style={styles.chartSmall}>
+                    {chartSmall.map((chartSmall,id)=>(
+                        <SmallChart key={id} chartSmall={chartSmall}/>
+                    ))}
+                </p>
             </section>
         )
 }
@@ -36,5 +41,15 @@ const styles={
         position: "absolute",
         left: "20%",
         textDecoration: "underline",
+    },
+    chartSmall: {
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        marginTop: "5%",
+        position: "absolute",
+        top: "40%",
+        left: "15%",
     }
 }

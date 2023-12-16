@@ -1,65 +1,34 @@
 import React from 'react';
-import { RadialBarChart, RadialBar, Legend } from 'recharts';
+import { PieChart, Pie } from 'recharts';
 
-const data = [
-    {
-        name: '18-24',
-        uv: 31.47,
-        pv: 2400,
-        fill: '#8884d8',
-    },
-    {
-        name: '25-29',
-        uv: 26.69,
-        pv: 4567,
-        fill: '#83a6ed',
-    },
-    {
-        name: '30-34',
-        uv: 15.69,
-        pv: 1398,
-        fill: '#8dd1e1',
-    },
-    {
-        name: '35-39',
-        uv: 8.22,
-        pv: 9800,
-        fill: '#82ca9d',
-    },
-    {
-        name: '40-49',
-        uv: 8.63,
-        pv: 3908,
-        fill: '#a4de6c',
-    },
-    {
-        name: '50+',
-        uv: 2.63,
-        pv: 4800,
-        fill: '#d0ed57',
-    },
-    {
-        name: 'unknow',
-        uv: 6.67,
-        pv: 4800,
-        fill: '#ffc658',
-    },
+const data01 = [
+    { name: 'Group A', value: 400 },
+    { name: 'Group B', value: 300 },
+    { name: 'Group C', value: 300 },
+    { name: 'Group D', value: 200 },
+];
+const data02 = [
+    { name: 'A1', value: 100 },
+    { name: 'A2', value: 300 },
+    { name: 'B1', value: 100 },
+    { name: 'B2', value: 80 },
+    { name: 'B3', value: 40 },
+    { name: 'B4', value: 30 },
+    { name: 'B5', value: 50 },
+    { name: 'C1', value: 100 },
+    { name: 'C2', value: 200 },
+    { name: 'D1', value: 150 },
+    { name: 'D2', value: 50 },
 ];
 
 const SmallChart=({chartSmall})=>{
     return(
         <article key={chartSmall.id} style={styles.card}>
             <h1 style={styles.h1}>{chartSmall.chartHeader}</h1>
-            <RadialBarChart cx="50%" cy="50%" innerRadius="10%" outerRadius="80%" barSize={10} data={data}>
-                <RadialBar
-                    minAngle={15}
-                    label={{ position: 'insideStart', fill: '#fff' }}
-                    background
-                    clockWise
-                    dataKey="uv"
-                />
-                <Legend iconSize={10} layout="vertical" verticalAlign="middle" wrapperStyle={styles.wrapper} />
-            </RadialBarChart>
+            <PieChart width={300} height={300}>
+                <Pie data={data01} dataKey="value" cx="50%" cy="50%" outerRadius={50} fill="#28666e" />
+                <Pie data={data02} dataKey="value" cx="50%" cy="50%" innerRadius={55} outerRadius={65} fill="#09151F" label />
+            </PieChart>
         </article>
     )
 }
@@ -68,8 +37,8 @@ export default SmallChart;
 
 const styles={
     card: {
-        height: "100%",
-        width: "100%",
+        height: "60%",
+        width: "70%",
         backgroundColor: "#acbcbc",
         display: "flex",
         boxShadow: "0px 5px 10px 0px #09151F",
@@ -77,15 +46,17 @@ const styles={
         margin: "2%",
         paddingHorizontal: "2%",
         textAlign: "center",
+        position: "absolute !important",
+        left: "20%",
+        top: "10%",
+        flexDirection: "row",
+        justifyContent: "center",
+        alignItems: "center",
+        borderRadius: "10px",
+        wrap: "wrap",
     },
     h1: {
         borderBottom: "1px solid #09151F",
         padding: "1%",
     },
-    wrapper: {
-        top: '50%',
-        right: 0,
-        transform: 'translate(0, -50%)',
-        lineHeight: '24px',
-    }
 }
