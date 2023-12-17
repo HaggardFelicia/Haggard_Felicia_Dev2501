@@ -1,10 +1,35 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
+import SettingsForm from "../components/SettingsForm";
 
 function Settings(){
+    const [userData, setuserData]=useState(null);
+
+    useEffect(()=>{
+        async function fetchAPI(){
+            const response = await fetch("https://randomuser.me/api/");
+            const data = await response.json();
+            const user = data.results;
+            console.log(user);
+            setuserData(user);
+        }
+        fetchAPI();
+    },[]);
+
     return(
-        <div style={styles.container}>
+        <section style={styles.container}>
             <h1 style={styles.h1}>Settings</h1>
-        </div>
+            {userData && <SettingsForm 
+                avatar={userData.picture.large}
+                fname={userData.name.first}
+                lname={userData.name.last}
+                street={userData.location.street.number + " " + userData.location.street.name}
+                city={userData.location.city}
+                state={userData.location.state}
+                zipcode={userData.location.postcode}
+                email={userData.email}
+                phone={userData.phone}
+            />}
+        </section>
     )
 }
 
