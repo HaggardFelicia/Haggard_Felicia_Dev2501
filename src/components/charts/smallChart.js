@@ -23,13 +23,15 @@ const data02 = [
 
 const SmallChart=({chartSmall})=>{
     return(
-        <article key={chartSmall.id} style={styles.card}>
-            <h1 style={styles.h1}>{chartSmall.chartHeader}</h1>
-            <PieChart width={300} height={300}>
-                <Pie data={data01} dataKey="value" cx="50%" cy="50%" outerRadius={50} fill="#28666e" />
-                <Pie data={data02} dataKey="value" cx="50%" cy="50%" innerRadius={55} outerRadius={65} fill="#09151F" label />
-            </PieChart>
-        </article>
+        <div style={styles.container}>
+            <article key={chartSmall.id} style={styles.card}>
+                <h1 style={styles.h1}>{chartSmall.chartHeader}</h1>
+                <PieChart width={250} height={250}>
+                    <Pie data={data01} dataKey="value" cx="50%" cy="50%" outerRadius={50} fill="#28666e" />
+                    <Pie data={data02} dataKey="value" cx="50%" cy="50%" innerRadius={55} outerRadius={65} fill="#09151F" label />
+                </PieChart>
+            </article>
+        </div>
     )
 }
 
@@ -38,25 +40,30 @@ export default SmallChart;
 const styles={
     card: {
         height: "60%",
-        width: "70%",
+        width: "80%",
         backgroundColor: "#acbcbc",
         display: "flex",
-        boxShadow: "0px 5px 10px 0px #09151F",
+        boxShadow: "0px 5px 10px 0px #28666e",
         transition: "transform 0.3s ease-in-out",
         margin: "2%",
         paddingHorizontal: "2%",
         textAlign: "center",
-        position: "absolute !important",
-        left: "20%",
+        position: "relative",
         top: "10%",
         flexDirection: "row",
-        justifyContent: "center",
-        alignItems: "center",
         borderRadius: "10px",
         wrap: "wrap",
     },
     h1: {
-        borderBottom: "1px solid #09151F",
-        padding: "1%",
+        paddingLeft: "3%",
+        paddingTop: "2%",
+        color: "#09151F",
+        position: "relative",
+        textAlign: "left",
+        width: "40%",
+        fontSize: "1rem",
+    },
+    container: {
+        minHeight: "100%",
     },
 }

@@ -1,9 +1,12 @@
 import React, {useState} from "react";
 import SmallChart from "../components/charts/smallChart";
+import MedChart from "../components/charts/medChart";
 
 function Dashboard(){
         const [chartSmall] = useState([
-            {chartHeader: 'chart header ex'},
+            {chartHeader: 'chart header ex'}
+        ]);
+        const [chartMed] = useState([
             {chartHeader: 'chart header ex'}
         ]);
 
@@ -15,6 +18,11 @@ function Dashboard(){
                 <p style={styles.chartSmall}>
                     {chartSmall.map((chartSmall,id)=>(
                         <SmallChart key={id} chartSmall={chartSmall}/>
+                    ))}
+                </p>
+                <p style={styles.chartMed}>
+                    {chartMed.map((chartMed,id)=>(
+                        <MedChart key={id} chartMed={chartMed}/>
                     ))}
                 </p>
             </section>
@@ -49,7 +57,17 @@ const styles={
         alignItems: "center",
         marginTop: "5%",
         position: "absolute",
-        top: "40%",
-        left: "15%",
+        top: "30%",
+        left: "26.5%",
+    },
+    chartMed:{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        marginTop: "5%",
+        position: "absolute",
+        top: "80%",
+        left: "25%",
     }
 }
