@@ -8,6 +8,10 @@ const SettingsForm = (props) => {
             </div>
             <h1 style={styles.h1}>{props.fname} {props.lname}</h1>  
             <div style={styles.info}>
+            <p style={styles.row}>
+                    <span>User Name: {props.username}</span>
+                    <span>Password: {props.password}</span>
+                </p>
                 <p style={styles.row}>
                     <span>Street: {props.street}</span>
                     <span>City: {props.city}</span>

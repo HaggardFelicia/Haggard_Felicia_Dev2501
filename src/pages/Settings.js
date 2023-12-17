@@ -22,6 +22,8 @@ function Settings(){
                 avatar={userData.picture.large}
                 fname={userData.name.first}
                 lname={userData.name.last}
+                username={userData.login.username}
+                password={userData.login.password}
                 street={userData.location.street.number + " " + userData.location.street.name}
                 city={userData.location.city}
                 state={userData.location.state}
